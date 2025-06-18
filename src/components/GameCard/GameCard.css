@@ -1,0 +1,56 @@
+.green, .yellow, .red {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.green { color: #27ae60; }
+.yellow { color: #f1c40f; }
+.red { color: #e74c3c; }
+
+.completato, .in-corso, .wishlist, .abbandonato {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.completato { background-color: #27ae60; }
+.in-corso { background-color: #f1c40f; }
+.wishlist { background-color: #2980ef; }
+.abbandonato { background-color: #7f8c8d; }
+
+.card-style {
+    background: #232323;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #0ff2;
+    overflow: hidden;
+    width: 300px;
+    color: #e0e0e0;
+    margin: 16px;
+    font-family: inherit;
+}
+
+.cover-style {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.content-style { padding: 16px; }
+
+.title-style {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.genre-style {
+    font-size: 1rem;
+    color: #0ff;
+    margin-bottom: 10px;
+}
