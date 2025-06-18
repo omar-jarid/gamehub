@@ -1,0 +1,29 @@
+.nav-style {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    background: #181818;
+    padding: 18px 0 8px 0;
+    border-bottom: 2px solid #0ff;
+}
+
+.active-tab, .idle-tab {
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 22px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.active-tab {
+    color: #0ff;
+    background: #232323;
+    border: 2px solid #0ff;
+}
+
+.idle-tab {
+    color: #e0e0e0;
+    background: transparent;
+    border: 2px solid transparent;
+}
