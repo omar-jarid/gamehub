@@ -55,6 +55,7 @@ function App() {
         setVotoMin={setVotoMin}
         soloWishlist={soloWishlist}
         setSoloWishlist={setSoloWishlist} />
+      <div className="filtered-games">Risultati: {giochiFiltrati.length} / {giochi.length}</div>
       {
         loading ? (
           <div className="loading-games">
