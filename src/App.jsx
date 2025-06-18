@@ -44,7 +44,17 @@ function App() {
         setVotoMin={setVotoMin}
         soloWishlist={soloWishlist}
         setSoloWishlist={setSoloWishlist} />
-      <GameList giochi={giochiFiltrati} />
+      {
+        giochiFiltrati.length > 0 ? (
+          <GameList giochi={giochiFiltrati} />
+        ) : (
+          <div className="no-games">
+            <span class="emoji">😢</span>
+            Nessun gioco trovato!<br />
+            Prova a cambiare i filtri o la ricerca.
+          </div>
+        )
+      }
     </>
   )
 }
