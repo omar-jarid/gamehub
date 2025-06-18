@@ -68,7 +68,7 @@ function App() {
             <GameList giochi={giochiFiltrati} />
           ) : (
             <div className="no-games">
-              <span class="emoji">😢</span>
+              <span className="emoji">😢</span>
               Nessun gioco trovato!<br />
               Prova a cambiare i filtri o la ricerca.
             </div>
