@@ -1,0 +1,121 @@
+const giochi = [
+  {
+    "id": 1,
+    "titolo": "The Witcher 3: Wild Hunt",
+    "genere": "RPG",
+    "piattaforma": "PC",
+    "annoUscita": 2015,
+    "prezzo": 29.99,
+    "voto": 10,
+    "stato": "completato",
+    "coverUrl": "https://picsum.photos/300/400?1",
+    "oreGiocate": 120,
+    "difficolta": "Difficile"
+  },
+  {
+    "id": 2,
+    "titolo": "Super Mario Odyssey",
+    "genere": "Platform",
+    "piattaforma": "Switch",
+    "annoUscita": 2017,
+    "prezzo": 49.99,
+    "voto": 9,
+    "stato": "completato",
+    "coverUrl": "https://picsum.photos/300/400?2",
+    "oreGiocate": 40,
+    "difficolta": "Medio"
+  },
+  {
+    "id": 3,
+    "titolo": "FIFA 24",
+    "genere": "Sports",
+    "piattaforma": "PlayStation",
+    "annoUscita": 2023,
+    "prezzo": 69.99,
+    "voto": 8,
+    "stato": "in-corso",
+    "coverUrl": "https://picsum.photos/300/400?3",
+    "oreGiocate": 55,
+    "difficolta": "Medio"
+  },
+  {
+    "id": 4,
+    "titolo": "Minecraft",
+    "genere": "Puzzle",
+    "piattaforma": "PC",
+    "annoUscita": 2011,
+    "prezzo": 23.99,
+    "voto": 10,
+    "stato": "completato",
+    "coverUrl": "https://picsum.photos/300/400?4",
+    "oreGiocate": 200,
+    "difficolta": "Facile"
+  },
+  {
+    "id": 5,
+    "titolo": "Call of Duty: Modern Warfare II",
+    "genere": "FPS",
+    "piattaforma": "Xbox",
+    "annoUscita": 2022,
+    "prezzo": 59.99,
+    "voto": 7,
+    "stato": "abbandonato",
+    "coverUrl": "https://picsum.photos/300/400?5",
+    "oreGiocate": 15,
+    "difficolta": "Difficile"
+  },
+  {
+    "id": 6,
+    "titolo": "Zelda: Breath of the Wild",
+    "genere": "RPG",
+    "piattaforma": "Switch",
+    "annoUscita": 2017,
+    "prezzo": 59.99,
+    "voto": 10,
+    "stato": "completato",
+    "coverUrl": "https://picsum.photos/300/400?6",
+    "oreGiocate": 100,
+    "difficolta": "Difficile"
+  },
+  {
+    "id": 7,
+    "titolo": "Among Us",
+    "genere": "Strategy",
+    "piattaforma": "Mobile",
+    "annoUscita": 2018,
+    "prezzo": 0.00,
+    "voto": 8,
+    "stato": "wishlist",
+    "coverUrl": "https://picsum.photos/300/400?7",
+    "oreGiocate": 0,
+    "difficolta": "Facile"
+  },
+  {
+    "id": 8,
+    "titolo": "Rocket League",
+    "genere": "Racing",
+    "piattaforma": "PC",
+    "annoUscita": 2015,
+    "prezzo": 19.99,
+    "voto": 9,
+    "stato": "in-corso",
+    "coverUrl": "https://picsum.photos/300/400?8",
+    "oreGiocate": 60,
+    "difficolta": "Medio"
+  },
+  {
+    "id": 9,
+    "titolo": "Cyberpunk 2077",
+    "genere": "RPG",
+    "piattaforma": "PlayStation",
+    "annoUscita": 2020,
+    "prezzo": 39.99,
+    "voto": 8,
+    "stato": "in-corso",
+    "coverUrl": "https://picsum.photos/300/400?9",
+    "oreGiocate": 45,
+    "difficolta": "Difficile"
+  }
+];
+
+export const getAllGames = () => giochi;
