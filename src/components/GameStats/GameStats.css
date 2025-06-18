@@ -1,0 +1,27 @@
+ul { list-style: none; }
+
+.game-stats {
+    background: #181818;
+    color: #e0e0e0;
+    border-radius: 14px;
+    padding: 18px 28px;
+    margin: 18px auto;
+    max-width: 340px;
+    box-shadow: 0 2px 12px #0ff2;
+    font-size: 1.05rem;
+    text-align: left;
+}
+
+.light-blue { color: #0ff; }
+
+.stats-title {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.games-per-status { margin: 8px 0; }
+
+.status-item { 
+    margin: 0;
+    padding-left: 18px;
+}

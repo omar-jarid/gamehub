@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import GameList from './components/GameList/GameList';
+import GameStats from './components/GameStats/GameStats';
 import Navigation from './components/Navigation/Navigation';
 import { getAllGames } from './data/mockData'
 import { useState } from 'react';
@@ -14,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Header gamerTag={gamerTag} totalGames={giochi.length} /> 
+      <Header gamerTag={gamerTag} games={giochi} /> 
       <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
       <GameList giochi={giochiFiltrati} />
     </>
