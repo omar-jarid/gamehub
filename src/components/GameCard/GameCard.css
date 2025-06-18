@@ -28,9 +28,10 @@
     border-radius: 16px;
     box-shadow: 0 2px 12px #0ff2;
     overflow: hidden;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     color: #e0e0e0;
-    margin: 16px;
+    margin: auto;
     font-family: inherit;
 }
 
