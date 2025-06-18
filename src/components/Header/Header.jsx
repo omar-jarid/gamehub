@@ -1,7 +1,7 @@
 import GameStats from '../GameStats/GameStats';
 import './Header.css'
 
-function Header({gamerTag, games}) {
+function Header({ gamerTag, games, search, setSearch }) {
     return (
         <header className="header-style">
             <div className="title-style">
@@ -11,6 +11,14 @@ function Header({gamerTag, games}) {
                 Giochi in collezione: <b>{games.length}</b>
             </div>
             <GameStats giochi={games} />
+            <div className="search-style">
+                <input 
+                    type="text" 
+                    placeholder="Cerca un gioco..." 
+                    value={search}
+                    onChange={e => setSearch(e.target.value)}
+                    className="input-style"/>
+            </div>
         </header>
     );
 }

@@ -14,6 +14,7 @@ function App() {
   const [filtroPiattaforma, setFiltroPiattaforma] = useState("");
   const [votoMin, setVotoMin] = useState(1);
   const [soloWishlist, setSoloWishlist] = useState(false); 
+  const [search, setSearch] = useState(""); 
 
   const [activeTab, setActiveTab] = useState("tutti");
   const giochiFiltrati = giochi
@@ -21,11 +22,17 @@ function App() {
     .filter(gioco => filtroGenere ? gioco.genere === filtroGenere : true)
     .filter(gioco => filtroPiattaforma ? gioco.piattaforma === filtroPiattaforma : true)
     .filter(gioco => gioco.voto >= votoMin)
-    .filter(gioco => soloWishlist ? gioco.stato === "wishlist" : true);
+    .filter(gioco => soloWishlist ? gioco.stato === "wishlist" : true)
+    .filter(
+      gioco => search.trim() === "" ? true : (
+        gioco.titolo.toLowerCase().includes(search.toLowerCase()) ||
+        gioco.genere.toLowerCase().includes(search.toLowerCase())
+      )
+    );
 
   return (
     <>
-      <Header gamerTag={gamerTag} games={giochi} /> 
+      <Header gamerTag={gamerTag} games={giochi} search={search} setSearch={setSearch}/> 
       <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
       <GameFilters
         giochi={giochi}
